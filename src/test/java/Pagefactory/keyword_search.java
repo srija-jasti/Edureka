@@ -13,12 +13,24 @@ WebDriver driver;
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+//	
 	@FindBy(xpath="/html/body/header/nav/div[3]") WebElement outer_search;
+	
+//	@FindBy(xpath="//input[@aria-label='Enter Course, Category or keyword']") WebElement outer_search; //trial
 	
 	@FindBy(id="search-input") WebElement inner_search;
 	
 	@FindBy(xpath="//span[@class='viewdetailsbtn' and contains(text(),'View Details')]") WebElement powerbi_select;
+	
+//	@FindBy(xpath="//*[@id=\"add-master-courses\"]/a[1]/div[1]") WebElement powerbi_select; //trial
+	
+	public void data(String courses) {
+		inner_search.sendKeys(courses);
+		inner_search.sendKeys(Keys.ENTER);
+		
+	}
+	
+
 	
 	public void search_bar() {
 		outer_search.click();
@@ -29,6 +41,7 @@ WebDriver driver;
 		inner_search.sendKeys(Keys.ENTER);
 		
 	}
+	
 	
 	
 	public void select_powerBi() {

@@ -1,5 +1,6 @@
 package Pagefactory;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,6 +23,8 @@ WebDriver driver;
 	
 	@FindBy(xpath="//button[contains(text(),'Login')]") WebElement login;
 	
+	@FindBy(id="passwdErrorr") WebElement pass_error;
+	
 	public void know_click() {
 		know.click();
 		
@@ -37,6 +40,11 @@ WebDriver driver;
 	
 	public void login_click() {
 		login.click();
+	}
+	
+	public void error() {
+		String e=pass_error.getText();
+		System.out.println("Text is: "+e);
 	}
 
 }

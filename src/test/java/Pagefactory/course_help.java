@@ -16,6 +16,8 @@ WebDriver driver;
 	
 	@FindBy(xpath="/html/body/header/nav/div[3]") WebElement search_field;
 	
+//	@FindBy(xpath="//input[@aria-label='Enter Course, Category or keyword']")WebElement search_field; //trial
+	
 	@FindBy(id="search-input") WebElement search_field2;
 	
 //	@FindBy(xpath="//*[@id=\\\"add-master-courses\\\"]/a[1]") WebElement course_add;

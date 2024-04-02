@@ -120,9 +120,10 @@ public class Edureka_course_search {
 //
 //
 	@Then("user should see enroll pop")
-	public void user_should_see_enroll_pop() {
+	public void user_should_see_enroll_pop()  {
 	    // Write code here that turns the phrase above into concrete actions
 //	    throw new io.cucumber.java.PendingException();
+		
 	}
 
 
@@ -166,7 +167,7 @@ public class Edureka_course_search {
 	}
 //
 	@When("user tap on the course Micosoft powerBi Certification Training Course")
-	public void user_tap_on_the_course_micosoft_power_bi_certification_training_course() throws InterruptedException {
+	public void user_tap_on_the_course_micosoft_power_bi_certification_training_course() throws InterruptedException  {
 	    // Write code here that turns the phrase above into concrete actions
 //	    throw new io.cucumber.java.PendingException();
 		Thread.sleep(4000);
@@ -177,9 +178,12 @@ public class Edureka_course_search {
 	}
 ////
 	@Then("user should be on course page")
-	public void user_should_be_on_course_page() {
+	public void user_should_be_on_course_page() throws InterruptedException  {
 	    // Write code here that turns the phrase above into concrete actions
 //	    throw new io.cucumber.java.PendingException();
+		Thread.sleep(20000);
+	
+	   
 	}
 //	
 //	
@@ -205,7 +209,7 @@ public class Edureka_course_search {
 //		driver.findElement(By.xpath("//a[@class='ga_courses_click']")).click();
 		course_opt_search cb = new course_opt_search(driver);
 		cb.courses_button();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 	}
 
 	@When("different courses will be display")
@@ -230,10 +234,11 @@ public class Edureka_course_search {
 	}
 //
 	@Then("user will be redirected to enrollment page")
-	public void user_will_be_redirected_to_enrollment_page() {
+	public void user_will_be_redirected_to_enrollment_page()  {
 	    // Write code here that turns the phrase above into concrete actions
 //	    throw new io.cucumber.java.PendingException();
 //		driver.findElement(By.xpath("//button[@class='videoinfo_btn_enr_stle__G_pv9 btn btn-primary']")).click();
+		
 	}
 //	
 //	
@@ -304,10 +309,12 @@ public class Edureka_course_search {
 	}
 //
 	@Then("user will get a popup")
-	public void user_will_get_a_popup() {
+	public void user_will_get_a_popup()  {
 	    // Write code here that turns the phrase above into concrete actions
 //	    throw new io.cucumber.java.PendingException();
-	}
+		
+		
+			}
 
 	
 	//5
@@ -367,6 +374,8 @@ public void reviews_will_be_displayed() throws InterruptedException {
 //	driver.findElement(By.xpath("//*[@id=\"__next\"]/div/section[2]/div/div/div/div[5]/div[1]")).click();
 	Review r3 = new Review(driver);
 	r3.m2();
+	Thread.sleep(5000);
+	
 	
 }
 
@@ -417,7 +426,10 @@ public void user_click_on_login() {
 public void it_shows_a_error_message() {
     // Write code here that turns the phrase above into concrete actions
 //    throw new io.cucumber.java.PendingException();
-    driver.findElement(By.id("passwdErrorr"));
+//    driver.findElement(By.id("passwdErrorr"));
+	not_enroll ne4 = new not_enroll(driver);
+	ne4.error();
+	
 }
 
 

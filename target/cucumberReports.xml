@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="125.773" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="search courses on edureka app" name="enrollment pop up using category" time="19.155">
+<system-out><![CDATA[
+Given user is on edureka Homepage...........................................passed
+When user click on DevOps Category..........................................passed
+When user click on Devps certification course...............................passed
+When user has click on enroll button........................................passed
+Then user should see enroll pop.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="search courses on edureka app" name="Search using Keyword and go to course page" time="33.944">
+<system-out><![CDATA[
+Given user is on edureka Homepage...........................................passed
+When user tap on search screen..............................................passed
+When user enter "power Bi" in search bar and click..........................passed
+And user should see list of courses related to the power bi.................passed
+And user tap on the course Micosoft powerBi Certification Training Course...passed
+Then user should be on course page..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="search courses on edureka app" name="To get help in enrolling" time="30.96">
+<system-out><![CDATA[
+Given user is in Edureka Homepage...........................................passed
+When user tap click on search screen........................................passed
+When user enter "Cloud Architect Course - Masters Program" on search bar and click.passed
+And user tap on the course Cloud Architect Course - Masters Program.........passed
+And user click on get in touch button.......................................passed
+Then user will get a popup..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="search courses on edureka app" name="search using course name and read review - Example #1.1" time="27.271">
+<system-out><![CDATA[
+Given user is in Edureka Homepage...........................................passed
+When user click on search screen............................................passed
+When user enter "PMP Certification Training Course" in search bar...........passed
+When web page is redirected to the course page and click on review..........passed
+Then reviews will be displayed..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="search courses on edureka app" name="unable to login during enrollment" time="14.184">
+<system-out><![CDATA[
+Given user is on edureka Homepage...........................................passed
+When user select on know more it is redirected to course page...............passed
+When user click on login button to enroll...................................passed
+When user give username.....................................................passed
+When user click on login....................................................passed
+Then it shows a error message...............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
